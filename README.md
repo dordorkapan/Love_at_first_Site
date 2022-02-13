@@ -1,1 +1,11 @@
-# Love_at_first_site
+# Love@1Site
+
+Ceci est un site de rencontre, codé en python, SQL et HTML avec Flask.
+On peut y trouver six paiges:
+- Log-In: Où vous saisi votre nom d'utilisateur unique qui vas vous conecter a votre compt
+- Abonnement: Où vous entrez des informations sur vous-même.
+- Chercheur d'amour: Où l'utilisateur saisit leur préférence.
+- Liste des matchs: Où l'utilisateur reçoit une liste de personnes qui correspondent à sa recherche. ainsi, à côté de chaque personne, il y aura un endroit pour sélectionner vos personnes préférées.
+- Liste des favoris: Où vous pouvez trouver une liste des personnes que vous avez sélectionnées.
+
+Pour l'instant je n'ai pas compris comment faire la première et la dernière page, et comme il y a beaucoup de bugs dans les trois pages principales (Abonnement, Chercheur d'amour, Liste des matchs) je me concentre dessus.
