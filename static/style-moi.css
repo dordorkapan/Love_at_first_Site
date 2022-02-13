@@ -1,0 +1,28 @@
+body {
+	background-color: #FFC4C4;
+}
+
+h1 {
+	color: white;
+	font-family: American Typewriter , sans-serif;
+}
+
+p {
+	color: black;
+	font-family: American Typewriter , sans-serif;
+}
+
+img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.corps{
+margin:auto;
+width:80%;
+color: black;
+font-family: American Typewriter , sans-serif;
+}
+
+
