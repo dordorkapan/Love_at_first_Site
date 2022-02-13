@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Love at first Site</title>
+		<link rel="stylesheet" href="../static/style-moi.css">
+	</head>
+	<body>
+		<div class="menu">
+			<span class="bouton"><a href='/'><img src="../compte.png"></a></span>
+			<span class="bouton"><a href='/chercher'><img src="../cherche_l'amour.png"></a></span>
+		</div>
+		<div class="corps">
+			<center><h1>Abonnez vous!</h1></center>
+			<p>Remplissez les cases avec des informations sur vous-même:</p>
+			<form action="/" method="post">
+						<li><label>Votre Usernamee</label> : <input type="password" name="username" /></li>
+						<li><label>Votre Nom</label> : <input type="text" name="nom" /></li>
+						<li><label>Votre Prenom</label> : <input type="text" name="prenom" /></li>
+						<li><label>Votre Pronoms</label> : <input type="checkbox" id="femelle" name="pronouns" value="femelle">
+													 <label for="femelle"> Elle</label>
+													 <input type="checkbox" id="male" name="pronouns" value="male">
+													 <label for="male"> Il</label>
+													 <input type="checkbox" id="non-binaire" name="pronouns" value="non-binaire">
+													 <label for="non-binaire"> Iel</label></li>
+						<li><label>Votre Age</label> : <input type="number" name="age" /></li>
+						<li><label>Dans quelle ville habitez-vous?</label> : <input type="text" name="ville" /></li>
+						<li><label>Votre couleur des yeux</label> : <input type="text" name="colOeil" /></li>
+						<li><label>Votre couleur de cheveux</label> : <input type="text" name="colChev" /></li>
+						<li><label>Votre hauteur (en centimètre)</label> : <input type="number" name="hauteur" /></li>
+						<li><label>Parmi les options ci-dessous, quelle est votre première sortie idéale?</label> : <br>
+													<input type="checkbox" id="date1" name="firstDate" value="date1">
+													<label for="date1"> Une belle promenade sur la plage au coucher du soleil</label><br>
+													<input type="checkbox" id="date2" name="firstDate" value="date2">
+													<label for="date2"> Un dîner chic et un film romantique</label><br>
+													<input type="checkbox" id="date3" name="firstDate" value="date3">
+													<label for="date3"> Une visite dans un musée ou un spectacle</label></li>
+						<li><label>Une brève description de vos hobbies</label> : <input type="text" name="hobby" /></li>
+						<li><label>Quelle est votre réponse et solution à la vie, l'univers et tout? </label> : <input type="text" name="laSolution" /></li>
+						<li><label>Votre compte d'instagram</label> : <input type="text" name="insta" /></li>
+						<input type="submit" value="Envoyer" />
+			</form>	
+		</div>
+	</body>
