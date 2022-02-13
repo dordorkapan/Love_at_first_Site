@@ -13,7 +13,7 @@ def lire_base():
     """ Récupére des personnes dans la table
         Renvoie (list of tuples) : liste des personnes
     """
-    connexion = sqlite3.connect("base_CNRS")
+    connexion = sqlite3.connect("base_CNRS.sqbpro")
     curseur = connexion.cursor()
     requete_sql = """
     SELECT *
@@ -27,7 +27,7 @@ def index_max():
     """ Récupére l'id du prochain enregistrement
         Renvoie un entier
     """
-    connexion = sqlite3.connect("base_CNRS")
+    connexion = sqlite3.connect("base_CNRS.sqbpro")
     curseur = connexion.cursor()
     requete_sql = """
     SELECT MAX(id)
@@ -58,7 +58,7 @@ def recherche_sql(donnees):
     if donnees['hauteur'] !="":
         parametre0 = '%'+donnees['hauteur']+'%'
     parametres = (parametre0, parametre1, parametre2, parametre3, parametre4, parametre5)
-    connexion = sqlite3.connect("base_CNRS")
+    connexion = sqlite3.connect("base_CNRS.sqbpro")
     curseur = connexion.cursor()
     requete_sql = """
     SELECT *
@@ -94,7 +94,7 @@ def ajoute_enregistrement(indice, donnees):
         or parametre12 == "" or parametre13 == "":
         return False
     parametres = (indice, parametre0, parametre1, parametre2)
-    connexion = sqlite3.connect("base_CNRS")
+    connexion = sqlite3.connect("base_CNRS.sqbpro")
     curseur = connexion.cursor()
     requete_sql = """
     INSERT INTO Labos (id, nom, prenom, pronouns, age, ville, colOeil, colChev, hauteur, 1date, laSolution, hobby, insta ) 
