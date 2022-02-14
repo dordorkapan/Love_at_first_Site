@@ -10,12 +10,20 @@ h1 {
 p {
 	color: black;
 	font-family: American Typewriter , sans-serif;
+	width:80%;
 }
 
 img {
   width: 200px;
   display: block;
   margin: auto;
+}
+
+.field{
+	color: black;
+	font-family: American Typewriter , sans-serif;
+	margin:auto;
+	width:80%;
 }
 
 .corps{
