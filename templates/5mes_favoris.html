@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Love at first Site</title>
+		<link rel="stylesheet" href="../static/style-moi.css">
+	</head>
+	<body>
+		<div class="menu">
+			<span class="bouton"><a href='/'><img src="../compte.png"></a></span>
+			<span class="bouton"><a href='/chercher'><img src="../cherche_l'amour.png"></a></span>
+			<span class="bouton"><a href='/mes_favoris'><img src="../vos_matchs.png"></a></span>
+		</div>
+		<div class="corps">
+			<center><h1>Mes Favoris</h1></center>
+			<p>Voici les personnes avec lesquelles vous avez matché :</p>
+		</div>
+		<div class="corps">
+				<ul>
+				{% for abonne in abonnes %}
+					<li>NOM={{ abonne[1] }}, PRENOM={{ abonne[2] }}, PRONOM={{ abonne[3] }}, VILLE={{ abonne[4] }},<br> AGE={{ abonne[5] }}, COULEUR DES YEUX={{ abonne[6] }}, COULEUR DE CHEVEUX={{ abonne[7] }}, HAUTEUR={{ abonne[8] }},<br> IDÉE DE PREMIER SORTIE IDÉAL={{ abonne[9]}} HOBBIES={{ abonne[10] }}, LA SOLUTION={{ abonne[11] }},<br> INSTAGRAM={{ abonne[12] }}</li>
+					<button type="submit" class="button">
+						Enregistré/e
+					  </button>
+				{% endfor %}
+				</ul>
+		</div>
+	</body>
+</html>
+		

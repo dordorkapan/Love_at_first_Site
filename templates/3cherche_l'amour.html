@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Love at first Site</title>
+		<link rel="stylesheet" href="../static/style-moi.css">
+	</head>
+	<body>
+		<div class="menu">
+			<span class="bouton"><a href='/'><img src="../compte.png"></a></span>
+			<span class="bouton"><a href='/chercher'><img src="../cherche_l'amour.png"></a></span>
+			<span class="bouton"><a href='/mes_favoris'><img src="../vos_matchs.png"></a></span>
+		</div>
+		<div class="corps">
+			<center><h1>Cherchez votre amour!</h1></center>
+			<p>Remplissez les cases selon votre préférence :</p>
+			<form action="/chercher" method="post">
+						<li><label>Leur Pronoms</label> : <input type="checkbox" id="femelle" name="pronouns" value="femelle">
+													 <label for="femelle"> Elle</label>
+													 <input type="checkbox" id="male" name="pronouns" value="male">
+													 <label for="male"> Il</label>
+													 <input type="checkbox" id="non-binaire" name="pronouns" value="non-binaire">
+													 <label for="non-binaire"> Iel</label></li>
+						<li><label>Leur Age</label> : <input type="number" name="age" /></li>
+						<li><label>Dans quelle ville elle/il/iel habitent?</label> : <input type="text" name="ville" /></li>
+						<li><label>Leur couleur des yeux</label> : <input type="text" name="colOeil" /></li>
+						<li><label>Leur couleur de cheveux</label> : <input type="text" name="colChev" /></li>
+						<li><label>Leur hauteur</label> : <input type="number" name="hauteur" /></li>
+						<input type="submit" value="Trouvez votre partenaire!" />
+			</form>	
+		</div>
+	</body>
