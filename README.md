@@ -8,4 +8,3 @@ On peut y trouver six paiges:
 - Liste des matchs: Où l'utilisateur reçoit une liste de personnes qui correspondent à sa recherche. ainsi, à côté de chaque personne, il y aura un endroit pour sélectionner vos personnes préférées.
 - Liste des favoris: Où vous pouvez trouver une liste des personnes que vous avez sélectionnées.
 
-Pour l'instant je n'ai pas compris comment faire la première et la dernière page, et comme il y a beaucoup de bugs dans les trois pages principales (Abonnement, Chercheur d'amour, Liste des matchs) je me concentre dessus.
