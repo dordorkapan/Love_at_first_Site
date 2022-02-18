@@ -179,13 +179,6 @@ def liste_matchs():
            firstDate = result['IDÉE DE PREMIER SORTIE IDÉAL'], hobby = result['HOBBIES'], \
            laSolution = result['LA SOLUTION'], insta = result['INSTAGRAM'], abonnes = liste_match)
 
-@app.route("/mes_favoris")
-def favoris():
-    if not g.user:
-        return redirect(url_for('login'))
-
-    return render_template("5mes_favoris.html")
-
 if __name__ == "__main__":
     app.run(port=1660)
     
